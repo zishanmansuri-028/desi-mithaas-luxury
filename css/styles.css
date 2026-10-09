@@ -1,0 +1,102 @@
+/* ==========================================================================
+   DESI MITHAAS - BRIGHT LUXURY DESIGN SYSTEM (ROYAL CREAM + RICH CHOCOLATE + BURNT ORANGE)
+   Clean, Airy, Warm Gourmet Heritage Aesthetic
+   ========================================================================== */
+
+:root {
+  --bg-cream: #FAF6F0;
+  --bg-cream-pure: #FFFDF9;
+  --bg-card: #FFFFFF;
+  --bg-cream-warm: #F4ECE1;
+  --bg-cream-soft: #F7EFE4;
+
+  --choco-deep: #251108;
+  --choco-rich: #3A1A0E;
+  --choco-medium: #542B1A;
+  --choco-muted: #734531;
+  --choco-border: rgba(58, 26, 14, 0.12);
+
+  --burnt-orange: #D95B16;
+  --burnt-orange-light: #EA6825;
+  --burnt-orange-dark: #B34509;
+  --burnt-orange-soft: rgba(217, 91, 22, 0.12);
+}
+
+/* Gradients */
+.burnt-orange-bg {
+  background: linear-gradient(135deg, #EA6825 0%, #D95B16 100%);
+}
+
+.burnt-orange-text {
+  background: linear-gradient(135deg, #EA6825 0%, #D95B16 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.choco-gradient-text {
+  background: linear-gradient(135deg, #251108 0%, #4A2313 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Surfaces for Bright Luxury */
+.cream-glass {
+  background: rgba(255, 253, 249, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(58, 26, 14, 0.1);
+}
+
+.cream-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAF6F0 100%);
+  border: 1px solid rgba(58, 26, 14, 0.12);
+  box-shadow: 0 10px 25px rgba(58, 26, 14, 0.06);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cream-card:hover {
+  transform: translateY(-8px);
+  border-color: #D95B16;
+  box-shadow: 0 18px 38px rgba(217, 91, 22, 0.15);
+}
+
+/* Keyframe Animations */
+@keyframes floatChar {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes pulseBadge {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+@keyframes spinSlow {
+  100% { transform: rotate(360deg); }
+}
+
+.animate-float-char {
+  animation: floatChar 4s ease-in-out infinite;
+}
+
+.animate-pulse-badge {
+  animation: pulseBadge 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 35s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D95B16;
+  border-radius: 4px;
+}
